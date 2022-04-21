@@ -1,0 +1,570 @@
+{
+    "indexSummary": {
+        "documents": 792210,
+        "dataSize": {
+            "primaries": 52950814,
+            "total": 52950814
+        },
+        "unassignedShards": 0,
+        "totalShards": 1,
+        "status": "green"
+    },
+    "metrics": {
+        "index_search_request_rate": [
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.search.query_total",
+                    "metricAgg": "max",
+                    "label": "Total Shards",
+                    "title": "Search Rate",
+                    "description": "Number of search requests being executed across primary and replica shards. A single search can run against multiple shards!",
+                    "units": "/s",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": true
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        null
+                    ],
+                    [
+                        1648252800000,
+                        0
+                    ],
+                    [
+                        1648339200000,
+                        0
+                    ],
+                    [
+                        1648425600000,
+                        0
+                    ],
+                    [
+                        1648512000000,
+                        0.00011574074074074075
+                    ],
+                    [
+                        1648598400000,
+                        0
+                    ]
+                ]
+            }
+        ],
+        "index_request_rate": [
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.indexing.index_total",
+                    "metricAgg": "max",
+                    "label": "Total Shards",
+                    "title": "Indexing Rate",
+                    "description": "Number of documents being indexed for primary and replica shards.",
+                    "units": "/s",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": true
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        null
+                    ],
+                    [
+                        1648252800000,
+                        0.0007754629629629629
+                    ],
+                    [
+                        1648339200000,
+                        0.0007638888888888889
+                    ],
+                    [
+                        1648425600000,
+                        0.0030208333333333333
+                    ],
+                    [
+                        1648512000000,
+                        0.002650462962962963
+                    ],
+                    [
+                        1648598400000,
+                        0.004618055555555556
+                    ]
+                ]
+            },
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.primaries.indexing.index_total",
+                    "metricAgg": "max",
+                    "label": "Primary Shards",
+                    "title": "Indexing Rate",
+                    "description": "Number of documents being indexed for primary shards.",
+                    "units": "/s",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": true
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        null
+                    ],
+                    [
+                        1648252800000,
+                        0.0007754629629629629
+                    ],
+                    [
+                        1648339200000,
+                        0.0007638888888888889
+                    ],
+                    [
+                        1648425600000,
+                        0.0030208333333333333
+                    ],
+                    [
+                        1648512000000,
+                        0.002650462962962963
+                    ],
+                    [
+                        1648598400000,
+                        0.004618055555555556
+                    ]
+                ]
+            }
+        ],
+        "index_size": [
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.store.size_in_bytes",
+                    "metricAgg": "max",
+                    "label": "Store",
+                    "title": "Disk",
+                    "description": "Size of primary and replica shards on disk.",
+                    "units": "B",
+                    "format": "0,0.0 b",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        52847652
+                    ],
+                    [
+                        1648252800000,
+                        52836175
+                    ],
+                    [
+                        1648339200000,
+                        52856342
+                    ],
+                    [
+                        1648425600000,
+                        52897591
+                    ],
+                    [
+                        1648512000000,
+                        52926970
+                    ],
+                    [
+                        1648598400000,
+                        52960007
+                    ]
+                ]
+            },
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.primaries.store.size_in_bytes",
+                    "metricAgg": "max",
+                    "label": "Store (Primaries)",
+                    "title": "Disk",
+                    "description": "Size of primary shards on disk.",
+                    "units": "B",
+                    "format": "0,0.0 b",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        52847652
+                    ],
+                    [
+                        1648252800000,
+                        52836175
+                    ],
+                    [
+                        1648339200000,
+                        52856342
+                    ],
+                    [
+                        1648425600000,
+                        52897591
+                    ],
+                    [
+                        1648512000000,
+                        52926970
+                    ],
+                    [
+                        1648598400000,
+                        52960007
+                    ]
+                ]
+            }
+        ],
+        "index_mem": [
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.segments.memory_in_bytes",
+                    "metricAgg": "max",
+                    "label": "Lucene Total",
+                    "title": "Index Memory",
+                    "description": "Total heap memory used by Lucene for current index. This is the sum of other fields for primary and replica shards.",
+                    "units": "B",
+                    "format": "0.0 b",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        30056
+                    ],
+                    [
+                        1648252800000,
+                        26384
+                    ],
+                    [
+                        1648339200000,
+                        28328
+                    ],
+                    [
+                        1648425600000,
+                        29848
+                    ],
+                    [
+                        1648512000000,
+                        27928
+                    ],
+                    [
+                        1648598400000,
+                        31232
+                    ]
+                ]
+            },
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.segments.terms_memory_in_bytes",
+                    "metricAgg": "max",
+                    "label": "Terms",
+                    "title": "Index Memory",
+                    "description": "Heap memory used by Terms (e.g., text). This is a part of Lucene Total.",
+                    "units": "B",
+                    "format": "0.0 b",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        16000
+                    ],
+                    [
+                        1648252800000,
+                        14208
+                    ],
+                    [
+                        1648339200000,
+                        15328
+                    ],
+                    [
+                        1648425600000,
+                        15104
+                    ],
+                    [
+                        1648512000000,
+                        15328
+                    ],
+                    [
+                        1648598400000,
+                        15328
+                    ]
+                ]
+            },
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.segments.points_memory_in_bytes",
+                    "metricAgg": "max",
+                    "label": "Points",
+                    "title": "Index Memory",
+                    "description": "Heap memory used by Points (e.g., numbers, IPs, and geo data). This is a part of Lucene Total.",
+                    "units": "B",
+                    "format": "0.0 b",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        0
+                    ],
+                    [
+                        1648252800000,
+                        0
+                    ],
+                    [
+                        1648339200000,
+                        0
+                    ],
+                    [
+                        1648425600000,
+                        0
+                    ],
+                    [
+                        1648512000000,
+                        0
+                    ],
+                    [
+                        1648598400000,
+                        0
+                    ]
+                ]
+            }
+        ],
+        "index_document_count": [
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.primaries.docs.count",
+                    "metricAgg": "max",
+                    "label": "Document Count",
+                    "description": "Total number of documents, only including primary shards.",
+                    "units": "",
+                    "format": "0,0.[0]a",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        790994
+                    ],
+                    [
+                        1648252800000,
+                        791061
+                    ],
+                    [
+                        1648339200000,
+                        791127
+                    ],
+                    [
+                        1648425600000,
+                        791388
+                    ],
+                    [
+                        1648512000000,
+                        791617
+                    ],
+                    [
+                        1648598400000,
+                        792016
+                    ]
+                ]
+            }
+        ],
+        "index_segment_count": [
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.total.segments.count",
+                    "metricAgg": "max",
+                    "label": "Total",
+                    "title": "Segment Count",
+                    "description": "Number of segments for primary and replica shards.",
+                    "units": "",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        12
+                    ],
+                    [
+                        1648252800000,
+                        12
+                    ],
+                    [
+                        1648339200000,
+                        12
+                    ],
+                    [
+                        1648425600000,
+                        12
+                    ],
+                    [
+                        1648512000000,
+                        12
+                    ],
+                    [
+                        1648598400000,
+                        12
+                    ]
+                ]
+            },
+            {
+                "bucket_size": "1 day",
+                "timeRange": {
+                    "min": 1617145200000,
+                    "max": 1648759735367
+                },
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "index_stats.primaries.segments.count",
+                    "metricAgg": "max",
+                    "label": "Primaries",
+                    "title": "Segment Count",
+                    "description": "Number of segments for primary shards.",
+                    "units": "",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "data": [
+                    [
+                        1648166400000,
+                        12
+                    ],
+                    [
+                        1648252800000,
+                        12
+                    ],
+                    [
+                        1648339200000,
+                        12
+                    ],
+                    [
+                        1648425600000,
+                        12
+                    ],
+                    [
+                        1648512000000,
+                        12
+                    ],
+                    [
+                        1648598400000,
+                        12
+                    ]
+                ]
+            }
+        ]
+    },
+    "logs": {
+        "enabled": false,
+        "logs": [],
+        "reason": {
+            "indexPatternExists": false,
+            "indexPatternInTimeRangeExists": false,
+            "typeExistsAtAnyTime": false,
+            "typeExists": false,
+            "usingStructuredLogs": false,
+            "clusterExists": false,
+            "nodeExists": null,
+            "indexExists": false
+        },
+        "limit": 10
+    },
+    "shards": [
+        {
+            "index": "user-metrics",
+            "node": "sqAO3Eb_SX2uUkAEcIB5pg",
+            "primary": true,
+            "relocating_node": null,
+            "shard": 0,
+            "state": "STARTED"
+        }
+    ],
+    "shardStats": {
+        "nodes": {
+            "sqAO3Eb_SX2uUkAEcIB5pg": {
+                "shardCount": 1,
+                "indexCount": 1,
+                "name": "es-metrics-2",
+                "node_ids": [
+                    "sqAO3Eb_SX2uUkAEcIB5pg"
+                ],
+                "type": "master"
+            }
+        }
+    },
+    "nodes": {
+        "sqAO3Eb_SX2uUkAEcIB5pg": {
+            "shardCount": 1,
+            "indexCount": 1,
+            "name": "es-metrics-2",
+            "node_ids": [
+                "sqAO3Eb_SX2uUkAEcIB5pg"
+            ],
+            "type": "master"
+        }
+    },
+    "stateUuid": "4y_NIOPiQh-pzogD5xXNNw"
+}

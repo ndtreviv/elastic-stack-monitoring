@@ -1,0 +1,137 @@
+[
+    {
+        "cluster_uuid": "o9e_vjBhRg2gBrLDbMSnZQ",
+        "cluster_name": "cluster-one",
+        "version": "7.8.1",
+        "license": {
+            "status": "active",
+            "type": "basic"
+        },
+        "elasticsearch": {
+            "cluster_stats": {
+                "indices": {
+                    "count": 48,
+                    "docs": {
+                        "count": 4050127658,    
+                        "deleted": 91523361
+                    },
+                    "shards": {
+                        "index": {
+                            "replication": {
+                                "min": 1,
+                                "max": 1,
+                                "avg": 1
+                            },
+                            "shards": {
+                                "min": 2,
+                                "max": 480,
+                                "avg": 12.333333333333334
+                            },
+                            "primaries": {
+                                "min": 1,
+                                "max": 240,
+                                "avg": 6.166666666666667
+                            }
+                        },
+                        "total": 592,
+                        "primaries": 296,
+                        "replication": 1
+                    },
+                    "store": {
+                        "size_in_bytes": 11808488730456
+                    }
+                },
+                "nodes": {
+                    "fs": {
+                        "total_in_bytes": 24598752272384,
+                        "free_in_bytes": 12785134452736,
+                        "available_in_bytes": 11534966685696
+                    },
+                    "count": {
+                        "total": 5
+                    },
+                    "jvm": {
+                        "max_uptime_in_millis": 6550290813,
+                        "mem": {
+                            "heap_used_in_bytes": 80628227576,
+                            "heap_max_in_bytes": 166429982720
+                        }
+                    }
+                },
+                "status": "green"
+            }
+        },
+        "kibana": {},
+        "isPrimary": false,
+        "status": "green",
+        "isCcrEnabled": false
+    },
+    {
+        "cluster_uuid": "FzgHXrcnQ2ulRPcIieFHDA",
+        "cluster_name": "cluster-two",
+        "version": "7.9.0",
+        "license": {
+            "status": "active",
+            "type": "basic"
+        },
+        "elasticsearch": {
+            "cluster_stats": {
+                "indices": {
+                    "count": 145,
+                    "docs": {
+                        "count": 5776166763,
+                        "deleted": 1717089274
+                    },
+                    "shards": {
+                        "total": 244,
+                        "primaries": 201,
+                        "replication": 0.21393034825870647,
+                        "index": {
+                            "replication": {
+                                "avg": 0.296551724137931,
+                                "min": 0,
+                                "max": 1
+                            },
+                            "shards": {
+                                "min": 1,
+                                "max": 20,
+                                "avg": 1.6827586206896552
+                            },
+                            "primaries": {
+                                "min": 1,
+                                "max": 20,
+                                "avg": 1.3862068965517242
+                            }
+                        }
+                    },
+                    "store": {
+                        "size_in_bytes": 3567800285980,
+                        "reserved_in_bytes": 0
+                    }
+                },
+                "nodes": {
+                    "fs": {
+                        "free_in_bytes": 11186604716032,
+                        "available_in_bytes": 10436504055808,
+                        "total_in_bytes": 14760013029376
+                    },
+                    "count": {
+                        "total": 3
+                    },
+                    "jvm": {
+                        "max_uptime_in_millis": 6550408463,
+                        "mem": {
+                            "heap_used_in_bytes": 44583713704,
+                            "heap_max_in_bytes": 99857989632
+                        }
+                    }
+                },
+                "status": "green"
+            }
+        },
+        "kibana": {},
+        "isPrimary": false,
+        "status": "green",
+        "isCcrEnabled": false
+    }
+]

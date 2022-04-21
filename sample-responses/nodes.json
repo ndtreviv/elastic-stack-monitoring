@@ -1,0 +1,129 @@
+{
+    "clusterStatus": {
+        "status": "green",
+        "indicesCount": 287,
+        "documentCount": 114932583,
+        "dataSize": 18557825493,
+        "nodesCount": 1,
+        "upTime": 671687319,
+        "version": [
+            "7.17.0"
+        ],
+        "memUsed": 8285523528,
+        "memMax": 16416505856,
+        "unassignedShards": 0,
+        "totalShards": 287
+    },
+    "nodes": [
+        {
+            "name": "es-metrics-2",
+            "uuid": "sqAO3Eb_SX2uUkAEcIB5pg",
+            "isOnline": true,
+            "shardCount": 287,
+            "node_cgroup_throttled": {
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "node_stats.os.cgroup.cpu.stat.time_throttled_nanos",
+                    "metricAgg": "max",
+                    "label": "Cgroup Throttling",
+                    "title": "Cgroup CPU Performance",
+                    "description": "The amount of throttled time, reported in nanoseconds, of the Cgroup.",
+                    "units": "ns",
+                    "format": "0,0.[0]a",
+                    "hasCalculation": false,
+                    "isDerivative": true
+                },
+                "summary": {
+                    "minVal": 0,
+                    "maxVal": 0,
+                    "lastVal": 0,
+                    "slope": -1
+                }
+            },
+            "node_cpu_utilization": {
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "node_stats.process.cpu.percent",
+                    "metricAgg": "max",
+                    "label": "CPU Utilization",
+                    "description": "Percentage of CPU usage for the Elasticsearch process.",
+                    "units": "%",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "summary": {
+                    "minVal": 0,
+                    "maxVal": 2,
+                    "lastVal": 1,
+                    "slope": -1
+                }
+            },
+            "node_load_average": {
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "node_stats.os.cpu.load_average.1m",
+                    "metricAgg": "max",
+                    "label": "1m",
+                    "title": "System Load",
+                    "description": "Load average over the last minute.",
+                    "units": "",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "summary": {
+                    "minVal": 0.029998779296875,
+                    "maxVal": 0.81982421875,
+                    "lastVal": 0.330078125,
+                    "slope": -1
+                }
+            },
+            "node_jvm_mem_percent": {
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "node_stats.jvm.mem.heap_used_percent",
+                    "metricAgg": "max",
+                    "label": "Used Heap",
+                    "title": "JVM Heap",
+                    "description": "Total heap used by Elasticsearch running in the JVM.",
+                    "units": "%",
+                    "format": "0,0.[00]",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "summary": {
+                    "minVal": 4,
+                    "maxVal": 63,
+                    "lastVal": 50,
+                    "slope": -1
+                }
+            },
+            "node_free_space": {
+                "metric": {
+                    "app": "elasticsearch",
+                    "field": "node_stats.fs.total.available_in_bytes",
+                    "metricAgg": "max",
+                    "label": "Disk Free Space",
+                    "description": "Free disk space available on the node.",
+                    "units": "",
+                    "format": "0.0 b",
+                    "hasCalculation": false,
+                    "isDerivative": false
+                },
+                "summary": {
+                    "minVal": 2034459881472,
+                    "maxVal": 2034536800256,
+                    "lastVal": 2034460073984,
+                    "slope": 1
+                }
+            },
+            "transport_address": "172.19.0.1:9300",
+            "type": "master",
+            "nodeTypeLabel": "Master Node",
+            "nodeTypeClass": "starFilled",
+            "resolver": "sqAO3Eb_SX2uUkAEcIB5pg"
+        }
+    ],
+    "totalNodeCount": 1
+}
