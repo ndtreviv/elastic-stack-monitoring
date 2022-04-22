@@ -347,11 +347,11 @@ function QuickSelect ({ open, anchorEl, onClose, anchorOrigin, transformPopoverO
 
   const [refresh, setRefresh] = useState({ refreshing: false, period: 10, units: 'seconds' });
 
-  const doSetRefresh = (refresh) => {
-    setRefresh(refresh);
-    if (refresh.refreshing) {
-      startRefreshing(unitToMillis(refresh.period, refresh.units));
-    } else {
+  const doSetRefresh = (newRefresh) => {
+    setRefresh(newRefresh);
+    if (newRefresh.refreshing) {
+      startRefreshing(unitToMillis(newRefresh.period, newRefresh.units));
+    } else if (refresh.refreshing && !newRefresh.refreshing) {
       stopRefreshing();
     }
   };

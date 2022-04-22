@@ -343,7 +343,7 @@ export default function Node () {
           <Link component={RLink} underline='hover' color='inherit' to='/clusters'>
             clusters
           </Link>
-          <Link component={RLink} underline='hover' color='inherit' to={`/clusters/${clusterUuid}:${clusterName}/nodes`}>
+          <Link component={RLink} underline='hover' color='inherit' to={`/clusters/${clusterUuid}:${clusterName}`}>
             {clusterName}
           </Link>
           <Typography color='text.primary'>{nodeName}</Typography>

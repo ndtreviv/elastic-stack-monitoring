@@ -107,18 +107,21 @@ function IndexOverview () {
       setData(data);
       setLoading(false);
     });
+    return () => { };
   }, [clusterUuid, fetchRange, index]);
 
   useEffect(() => {
     if (!data && fetchRange != null) {
       fetchData();
     }
+    return () => { };
   }, [data, fetchRange, fetchData]);
 
   useEffect(() => {
     if (fetchRange != null) {
       fetchData();
     }
+    return () => { };
   }, [fetchRange, fetchData]);
 
   if (!data) return <Box sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', m: 2 }}><CircularProgress /></Box>;
@@ -404,7 +407,9 @@ export default function Index () {
           <Link component={RLink} underline='hover' color='inherit' to={`/clusters/${clusterUuid}:${clusterName}/nodes`}>
             {clusterName}
           </Link>
-          <Typography>indices</Typography>
+          <Link component={RLink} underline='hover' color='inherit' to={`/clusters/${clusterUuid}:${clusterName}#indices`}>
+            indices
+          </Link>
           <Typography color='text.primary'>{index}</Typography>
         </Breadcrumbs>
       </Box>
