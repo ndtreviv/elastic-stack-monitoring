@@ -16,7 +16,7 @@ It does the same thing, and it's free.
 
 Take a look and see for yourself:
 
-<video src='videos/esm-in-action.mp4' width="100%" />
+<video src='videos/esm-in-action.mp4' width="100%"></video>
 
 ## How does it work?
 This is just a React UI, served up by nginx that also reverse proxies API requests to a target kibana backend. 
