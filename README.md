@@ -7,7 +7,7 @@ First things first: **Why not Kibana?**
 
 The answer to that is: If you have the money for it, use Kibana.
 
-BUT if you're a small-to-medium sized business running a small number of elastic clusters and want multi-cluster monitoring, you probably already know that you need at least a gold+ licence, which will set you back around £4,500 *per node*.
+BUT if you're a small-to-medium sized business running a small number of elastic clusters and want multi-cluster monitoring, you probably already know that you need at least a gold+ licence, which will set you back around £4,500 *per node, per year*.
 
 Multi-cluster monitoring might be the only part of elastic stack gold licence you want, and you don't have an infrastructure big enough to warrant paying that price.
 
@@ -68,10 +68,10 @@ Here are a bunch of things this app could benefit from if you wanted to contribu
 3. Authentication
 4. Replace docker container args with run-time environment variables
 
-# Let's talk about 💷 😬
+# Let's talk about 💷
 
 This is an open source project. You are, of course, welcome to use it ✨ for free ✨.
 
 If you're a business (highly likely) and you're using this as part of your monitoring solutions, the I'd like to appeal to your better nature and ask you to consider donating to my cause (which is mostly about paying for my kids' swimming lessons and stuff like that). <br />
-Every little helps, and this app *is* saving you upwards of £4,500 node afterall 😉 <br />
+Every little helps, and this app *is* saving you upwards of £4,500 *per node, per year* afterall 😉 <br />
 If you decide to help a guy out, you can find my sponsorship link on the side and, from the bottom of my heart: thank you 🙏. It _is_ appreciated.

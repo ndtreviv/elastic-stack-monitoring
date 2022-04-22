@@ -12,8 +12,6 @@ export async function listClusters ({ from, to }) {
   };
 
   const response = await window.fetch(`${baseURL}/api/monitoring/v1/clusters`, {
-    // referrer: 'http://localhost:5601/app/monitoring',
-    // referrerPolicy: 'no-referrer-when-downgrade',
     body: JSON.stringify(body),
     method: 'POST'
   });
