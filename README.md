@@ -16,7 +16,8 @@ It does the same thing, and it's free.
 
 Take a look and see for yourself:
 
-https://github.com/ndtreviv/elastic-stack-monitoring/blob/main/videos/esm-in-action.mp4
+https://user-images.githubusercontent.com/1530653/164739693-e2a523de-4970-436b-863f-dd2c3d6080f0.mp4
+
 
 ## How does it work?
 This is just a React UI, served up by nginx that also reverse proxies API requests to a target kibana backend. 
