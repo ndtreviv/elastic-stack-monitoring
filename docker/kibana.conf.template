@@ -1,10 +1,10 @@
 upstream kibana {
-    server %TARGET_KIBANA_URL%;
+    server $TARGET_KIBANA_URL;
     keepalive 15;
 }
 
 server {
-    listen %LISTEN_ON_PORT%;
+    listen $LISTEN_ON_PORT;
     root /usr/share/nginx/html;
 
     location /api {
@@ -24,7 +24,7 @@ server {
         proxy_set_header 'accept' '*/*';
         proxy_set_header 'accept-language' 'en-GB,en-US;q=0.9,en;q=0.8';
         proxy_set_header 'content-type' 'application/json';
-        proxy_set_header 'kbn-version' '%TARGET_KIBANA_VERSION%';
+        proxy_set_header 'kbn-version' '${TARGET_KIBANA_VERSION}';
         proxy_set_header 'sec-ch-ua' '" Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"';
         proxy_set_header 'sec-ch-ua-mobile' '?0';
         proxy_set_header 'sec-ch-ua-platform' '"macOS"';

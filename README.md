@@ -35,18 +35,24 @@ For each elastic cluster, configure metricbeat with the elasticsearch-xpack modu
 
 You can do this either once (with `scope: cluster`) and use a load balancer for the entire cluster, or do it once per elasticsearch node (with `scope: node`). [Read the docs for more](https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-module-elasticsearch.html). You get mostly the same data in each case, except that, for the cluster scoped setup, the transport address at the node-level in the UI will show the load balancer's address for every node in the cluster, rather than the actual transport address of the nodes.
 
-### 2. Configure the .args and build the container
-You need to create a file called `.args` in this repo directory. It should contain three properties:
+### 2. Configure the args and build the container
+At this point you can choose:
+
+1. Create an .args file ([See .args-example for more](./.args-example)) and have the target kibana endpoint built into the container
+2. Create an .env file ([See .env-example for more](./.env-example)) and populate the target kibana endpoint at runtime
+
+Either way, you need to create the relevant file in this repo directory. It should contain three properties:
 
 1. TARGET_KIBANA_URL - the URL of the kibana backend uncluding port
 2. TARGET_KIBANA_VERSION - the version of the kibana backend you're targeting
 3. LISTEN_ON_PORT - the port to run elastic stack monitoring app on
 
- [See .args-example for more](./.args-example).
-
-Once you've created this file, run:
+If you're using `.args`, you need to run:
 
     ./docker/build.sh
+
+after you've created this file.
+If you're using `.env` there's no need to wait.
 
 This will build this app and create a docker container image called `esm-proxy`.
 
@@ -68,7 +74,6 @@ Here are a bunch of things this app could benefit from if you wanted to contribu
 1. Alerts
 2. Automated testing against multiple kibana backends
 3. Authentication
-4. Replace docker container args with run-time environment variables
 
 # Let's talk about 💷
 
