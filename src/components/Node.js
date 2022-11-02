@@ -235,7 +235,7 @@ function NodeOverview () {
       {!loading && <Box sx={{ height: '4px' }} />}
       <Paper elevation={2} sx={{ mb: 2, mt: 2 }}>
         <Grid container spacing={2} sx={{ pb: 4 }}>
-          {['node_jvm_mem', 'node_mem', 'node_total_io', 'node_cpu_metric', 'node_load_average', 'node_latency', 'node_segment_count'].map(metric => data.metrics[metric] && (
+          {['node_jvm_mem', 'node_mem', 'node_total_io', /* 'node_cpu_metric', */'node_load_average', 'node_latency', 'node_segment_count'].map(metric => data.metrics[metric] && (
             <Grid key={metric} item xs={6}>
               <MetricChart sx={{ p: 2, mb: 3, height: 200, width: '90%' }} title={data.metrics[metric][0].metric.title || data.metrics[metric][0].metric.label} series={data.metrics[metric]} />
             </Grid>))}
