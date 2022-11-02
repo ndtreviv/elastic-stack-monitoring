@@ -1,4 +1,5 @@
-const baseURL = `${document.location.origin}`;
+const isDev = parseInt((document.location.port || '80'), 10) >= 3000;
+const baseURL = isDev ? `${document.location.origin.replace(':' + document.location.port, '')}` : document.location.origin;
 
 export async function listClusters ({ from, to }) {
   const body = {
