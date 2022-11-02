@@ -166,7 +166,7 @@ function ShardActivity ({ data }) {
   return (
     <>
       <FormGroup sx={{ m: 1 }}>
-        <FormControlLabel control={<Switch value={showCompletedRecoveries} inputProps={{ 'aria-label': 'controlled' }} onChange={e => { setShowCompletedRecoveries(e.target.checked); }} />} label='Round to the minute' />
+        <FormControlLabel control={<Switch value={showCompletedRecoveries} inputProps={{ 'aria-label': 'controlled' }} onChange={e => { setShowCompletedRecoveries(e.target.checked); }} />} label='Show Completed Recoveries' />
       </FormGroup>
       <TableContainer elevation={2} component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label='simple table'>
