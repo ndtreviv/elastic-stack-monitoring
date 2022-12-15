@@ -88,7 +88,7 @@ function Indicators ({ data, sx }) {
             <Typography variant='subtitle2' gutterBottom component='div'>Indices</Typography>
           </Box>
           <Box sx={{ textAlign: 'center', fontWeight: 'bold' }}>
-            {data.nodeSummary.indexCount}
+            {data.nodeSummary.indexCount || 0}
           </Box>
         </Stack>
       </Box>
@@ -98,7 +98,7 @@ function Indicators ({ data, sx }) {
             <Typography variant='subtitle2' gutterBottom component='div'>Shards</Typography>
           </Box>
           <Box sx={{ textAlign: 'center', fontWeight: 'bold' }}>
-            {data.nodeSummary.totalShards}
+            {data.nodeSummary.totalShards || 0}
           </Box>
         </Stack>
       </Box>

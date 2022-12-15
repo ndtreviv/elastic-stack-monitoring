@@ -8,6 +8,7 @@ export const getColorForStatus = (status) => {
 };
 
 export const formatBytes = (bytes, decimals = 1, spacer = ' ') => {
+  if (!bytes) return 0 + 'B';
   const i = ~~(Math.log2(bytes) / 10);
   return (bytes / Math.pow(1024, i)).toFixed(decimals) + spacer + ('KMGTPEZY'[i - 1] || '') + 'B';
 };
