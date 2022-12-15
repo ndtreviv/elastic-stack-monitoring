@@ -10,6 +10,6 @@ fi
 
 PORT=$(cat .env | grep LISTEN_ON_PORT | awk -F'=' '{print $2}')
 echo "Running docker run --rm -d ${ENV_ARGS} -p $PORT:$PORT --name esm-proxy esm-proxy:latest"
-docker run --rm -d ${ENV_ARGS} -p $PORT:$PORT --name esm-proxy esm-proxy:latest
+docker run --rm ${ENV_ARGS} -p $PORT:$PORT --name esm-proxy esm-proxy:latest
 
 open http://localhost:$PORT
